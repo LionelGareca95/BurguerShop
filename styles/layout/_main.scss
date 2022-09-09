@@ -1,0 +1,21 @@
+.inicio {
+    margin-top: 7rem;
+    background: url(/img/home-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .contenido {
+        @include titulo(3rem);
+        max-width: 70rem;
+        text-align: center;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            padding: 2rem 0;
+        }
+    }
+}

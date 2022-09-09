@@ -1,0 +1,19 @@
+.footer {
+    text-align: center;
+    background: linear-gradient(transparent, $negro);
+
+    .link{
+        a {
+            margin: 1rem;
+        }
+    }
+
+    .creditos {
+        @include fuente(2rem);
+        
+        span {
+            color: $amarillo;
+            font-weight: bold;
+        }
+    }
+}

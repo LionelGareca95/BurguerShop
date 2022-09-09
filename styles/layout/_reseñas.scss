@@ -1,0 +1,36 @@
+.reseñas{
+
+    .box-container{
+       @include grid(40rem);
+ 
+       .box{
+          text-align: center;
+          padding:2rem;
+ 
+          img{
+             height: 10rem;
+             width: 10rem;
+             border-radius: 50%;
+             margin-bottom: 1rem;
+          }
+ 
+          h3{
+             @include titulo(2rem);
+          }
+ 
+          p{
+             @include fuente(1.4rem);
+             padding:1rem 0;
+          }
+ 
+          .stars{
+             padding-top: .5rem;
+ 
+             i{
+                font-size: 1.7rem;
+                color:$amarillo;
+             }
+          }
+       }
+    }
+ }

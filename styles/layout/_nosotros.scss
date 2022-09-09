@@ -1,0 +1,42 @@
+.nosotros {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .imagen {
+        flex: 1 1 40rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .contenido {
+        flex: 1 1 40rem;
+
+        .titulo {
+            @include titulo(2.5rem);
+        }
+        p{
+            @include fuente(1.5rem);
+            padding: 2rem 0;
+        }
+        .iconos{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            h3 {
+                flex: 1 1 16rem;
+                @include titulo(1.5rem)
+            }
+
+            i {
+                padding-right: .5rem;
+                color: $amarillo;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@mixin titulo($size) {
+    font-size: $size;
+    text-transform: uppercase;
+    color: $blanco;
+}
+
+@mixin fuente($size) {
+    font-size: $size;
+    line-height: 2;
+    color: $grisClaro;
+}
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($val, 1fr));
+    gap: 2rem;
+}

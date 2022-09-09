@@ -1,0 +1,39 @@
+.menu{
+
+    .box-container{
+       @include grid(31rem);
+ 
+       .box{
+          text-align: center;
+ 
+          &:hover img{
+             transform: translateY(1rem);
+          }
+ 
+          img{
+             height: 25rem;
+          }
+ 
+          .contenido{
+             padding:1rem 0;
+ 
+             .stars{
+                margin-bottom: 2rem;
+ 
+                i{
+                   font-size: 1.7rem;
+                   color:$amarillo;
+                }
+             }
+ 
+             h3{
+                @include titulo(2rem);
+             }
+ 
+             .precio{
+                @include fuente(2rem);
+             }
+          }
+       }
+    }
+ }

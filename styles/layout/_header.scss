@@ -1,0 +1,92 @@
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background-color: $negro;
+    padding: 3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .icons {
+        font-size: 2.5rem;
+        cursor: pointer;
+        color: $blanco;
+
+        &:hover {
+            color: $amarillo;
+        }
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .navegacion {
+        a {
+            color: $blanco;
+            font-size: 2rem;
+            margin: 0 2rem;
+
+            &:hover {
+                text-decoration: underline;
+                text-underline-offset: 1rem;
+                color: $amarillo;
+            }
+        }
+        .logo-principal {
+            display: inline-block;
+            width: 16rem;
+        }
+    }
+
+    .logo {
+        position: absolute;
+        top: 3rem;
+        left: 48.5%;
+        transform: translateX(-50%);
+
+        img {
+            width: 15rem;
+        }
+    }
+    .busqueda-formulario {
+        height: 7rem;
+        padding: 0 2rem;
+        border: $border;
+        display: flex;
+        align-items: center;
+        background-color: $negro;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+        &.active{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+         }
+
+         input {
+            width: 100%;
+            text-transform: none;
+            font-size: 1.6rem;
+            color: $blanco;
+         }
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+     }
+}
+
+.contenido-principal {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h3{
+        @include titulo(3rem);
+        margin-top: 1rem;
+    }
+}

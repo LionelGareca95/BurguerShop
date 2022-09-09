@@ -1,0 +1,27 @@
+.servicios {
+    @include grid(40rem);
+
+    .box {
+        text-align: center;
+        padding: 2rem;
+
+        i{
+            height: 7rem;
+            width: 7rem;
+            line-height: 7rem;
+            font-size: 2.5rem;
+            color: $negro;
+            background-color: $amarillo;
+            margin-bottom: 1rem;
+            border-radius: 50%;
+        }
+        h3{
+            padding: 1rem 0;
+             @include titulo(2rem);
+        }
+
+        p{
+            @include fuente(1.5rem);
+        }
+    }
+}

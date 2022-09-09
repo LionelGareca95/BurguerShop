@@ -1,0 +1,70 @@
+.contacto {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+
+        .mapa {
+            min-height: 50rem;
+            flex: 1 40rem;
+            width: 100%;
+        }
+
+        .formulario {
+            flex: 1 40rem;
+
+            .iconos-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                margin-bottom: 3rem;
+
+                .iconos {
+                    flex: 1 1 17rem;
+                    text-align: center;
+
+                    i {
+                        height: 6rem;
+                        width: 6rem;
+                        line-height: 6rem;
+                        border-radius: 50%;
+                        background-color: $amarillo;
+                        color: $negro;
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                    }
+                    h3 {
+                        padding: 1rem 0;
+                        @include titulo(2rem);
+                    }
+                    p {
+                        @include fuente(1.5rem);
+                    }
+                }
+            }
+
+            form {
+                text-align: center;
+
+                .box {
+                    padding: 1.2rem 1.4rem;
+                    font-size: 1.6rem;
+                    color: $blanco;
+                    border: $border;
+                    width: 100%;
+                    margin: .7rem 0;
+
+                    &:focus {
+                        border-color: $amarillo;
+                    }
+                }
+                
+                textarea {
+                    height: 15rem;
+                    resize: none;
+                }
+            }
+        }
+    }
+}
